@@ -85,8 +85,11 @@
   <div class="relative flex size-full min-h-screen flex-col bg-[#fcfbf8] group/design-root overflow-x-hidden"
     style='font-family: Manrope, "Noto Sans", sans-serif;'>
     <div class="layout-container flex h-full grow flex-col">
+      <!-- <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3f0e7] px-10 py-3"> -->
+      <!-- Replaced px-10 py-3 with responsive padding px-8 py-2 -->
       <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3f0e7] px-10 py-3">
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3f0e7] px-8 py-2">
         <div class="flex items-center gap-4 text-[#1c170d]">
           <!-- Mahima Ministries Logo In Header -->
           <div class="flex items-center gap-4 text-[#1c170d]">
@@ -144,9 +147,14 @@
             <a class="text-[#1c170d] text-sm font-medium leading-normal" href="#">Contact</a>
           </div>
           <!-- The Pulse Opacity Donate Button -->
-          <button class="pulse-opacity-button
+          <!-- <button class="pulse-opacity-button
                    text-xl font-bold
                    py-4 px-10 rounded-full
+                   focus:outline-none focus:ring-4 focus:ring-yellow-300 focus:ring-opacity-75"> -->
+          <!-- Replaced py-4 px-10 with Tailwind sizing utilities py-3 px-8 -->
+          <button class="pulse-opacity-button
+                   text-xl font-bold
+                   py-3 px-8 rounded-full
                    focus:outline-none focus:ring-4 focus:ring-yellow-300 focus:ring-opacity-75">
             <span class="button-content">
               <!-- Icon for donation: A simple heart symbol -->
@@ -159,7 +167,9 @@
           </button>
         </div>
       </header>
-      <div class="px-40 flex flex-1 justify-center py-5">
+      <!-- <div class="px-40 flex flex-1 justify-center py-5"> -->
+      <!-- Replaced px-40 with responsive padding -->
+      <div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 flex flex-1 justify-center py-5">
         <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
           <div class="@container">
             <div class="@[480px]:p-4">
@@ -178,8 +188,11 @@
                     and community development.
                   </h2>
                 </div>
+                <!-- <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#f4c653] text-[#1c170d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"> -->
+                <!-- Replaced h-10 px-4 and @[480px]:h-12 @[480px]:px-5 with Tailwind sizing utilities h-10 px-4 sm:h-12 sm:px-6 -->
                 <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#f4c653] text-[#1c170d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-6 bg-[#f4c653] text-[#1c170d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
                   <span class="truncate">Learn More</span>
                 </button>
               </div>
@@ -187,8 +200,11 @@
           </div>
           <div class="flex flex-col gap-10 px-4 py-10 @container">
             <div class="flex flex-col gap-4">
+              <!-- <h1
+                class="text-[#1c170d] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"> -->
+              <!-- Replaced text-[32px] with Tailwind text size utility text-3xl -->
               <h1
-                class="text-[#1c170d] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                class="text-[#1c170d] tracking-light text-3xl font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
                 Our Key Programs
               </h1>
               <p class="text-[#1c170d] text-base font-normal leading-normal max-w-[720px]">
@@ -249,12 +265,17 @@
               </div>
             </div>
           </div>
-          <h2 class="text-[#1c170d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recent
+          <!-- <h2 class="text-[#1c170d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recent
+            Highlights</h2> -->
+          <!-- Replaced text-[22px] with Tailwind text size utility text-2xl -->
+          <h2 class="text-[#1c170d] text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recent
             Highlights</h2>
           <div
             class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
             <div class="flex items-stretch p-4 gap-3">
-              <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+              <!-- <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60"> -->
+              <!-- Replaced min-w-60 with more flexible min-w-[240px] -->
+              <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-[240px]">
                 <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
                   style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4LAhZFMaNmJy064ovF1XleaajABrE2bFsLrZ9QK2OHClrPFj5m9hFcysgwMQZOJWEmTJQRdK9qti4-CW5H6LfrGmzxfQ2YGfeSv4zAlk17YYxP8z4v_HYHSka5jcaBjzQzzF5sJQWcliplBZisxoC3U3Z1sAi-z8r1HXXEq04-1j-SZZPCGSuPaTsN0K9S6Cg0CoJmLTfxr7iblnZimkverOv1MPaO7iiLFBpD7uq1UkWfM7AmBdq5EPKlqhcTgBCjbacigyMsUo");'>
                 </div>
@@ -266,7 +287,9 @@
                   </p>
                 </div>
               </div>
-              <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+              <!-- <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60"> -->
+              <!-- Replaced min-w-60 with more flexible min-w-[240px] -->
+              <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-[240px]">
                 <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
                   style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA3Owsyzf58l1soOQtt-C2VtK1-Lz3TFjUy11SC81w10UFWHRlxHc-LdpIyA8vSajDnEtQ6QF1aZDnqVCwUrtePenE19mB2Ao_f_sqszkzVsvFS3ytq7HnzG0pfQbbQtbMm8405yc3RPFBXky4IUoBFkL83hyxHh4PE--byccsDGKicb6zL480o4AMEJ7pYlob5rpsAz08jfnotdcp0ZOSqRF3LAd80lNuEEkfPCvdq_z_ciyxx-uOmlMaBIyDRaR_RcIIrzpv6L54");'>
                 </div>
@@ -278,7 +301,9 @@
                   </p>
                 </div>
               </div>
-              <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+              <!-- <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60"> -->
+              <!-- Replaced min-w-60 with more flexible min-w-[240px] -->
+              <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-[240px]">
                 <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
                   style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMQHz0WWEaz7cMSwcMd3VrLohgVUO0uMa0c7slnwq13JBftGJy7y64CCq05NNId0gWMfxFGY2ATUTsVDZG2X0FBdL5ean1B248psbs2vF2cMDTnVJ7IRYhZuvZufh9WWNj_8mj-f2LJNnJdE-Un-Hwv1kbZE-EnAwmdpQpXkaACr9WrDZdA_-_XiVt3hPyZ3oZMtgCx_ubN_dJ6zzZljjSUMKtAmAFKYrlpTCmV9cQdbDLpPL6qqbYsupdRQc46Te87_SqgNaqc1U");'>
                 </div>
@@ -295,8 +320,11 @@
           <div class="@container">
             <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
               <div class="flex flex-col gap-2 text-center">
+                <!-- <h1
+                  class="text-[#1c170d] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"> -->
+                <!-- Replaced text-[32px] with Tailwind text size utility text-3xl -->
                 <h1
-                  class="text-[#1c170d] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                  class="text-[#1c170d] tracking-light text-3xl font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
                   Get Involved
                 </h1>
                 <p class="text-[#1c170d] text-base font-normal leading-normal max-w-[720px">
@@ -307,12 +335,18 @@
               <div class="flex flex-1 justify-center">
                 <div class="flex justify-center">
                   <div class="flex flex-1 gap-3 flex-wrap max-w-[480px] justify-center">
+                    <!-- <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#f4c653] text-[#1c170d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"> -->
+                    <!-- Replaced h-10 px-4 and @[480px]:h-12 @[480px]:px-5 with Tailwind sizing utilities h-10 px-4 sm:h-12 sm:px-6 -->
                     <button
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#f4c653] text-[#1c170d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow">
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-6 bg-[#f4c653] text-[#1c170d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow">
                       <span class="truncate">Donate</span>
                     </button>
+                    <!-- <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#f3f0e7] text-[#1c170d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"> -->
+                    <!-- Replaced h-10 px-4 and @[480px]:h-12 @[480px]:px-5 with Tailwind sizing utilities h-10 px-4 sm:h-12 sm:px-6 -->
                     <button
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#f3f0e7] text-[#1c170d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow">
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-6 bg-[#f3f0e7] text-[#1c170d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow">
                       <span class="truncate">Volunteer</span>
                     </button>
                   </div>
